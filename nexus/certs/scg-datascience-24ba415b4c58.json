@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "scg-datascience",
+  "private_key_id": "24ba415b4c583b955a36bb033a4bfcde9ad9888e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCZYdLOwCeqnwMj\nPbksY2zJ6hBjVg+S0Eqo460OZdjVfH6fkH9PQEjjTJ8oiiNKuoz/LgULCv+O6wsU\nlBaSmku1B1IKk3Fcr7InthWxEbm/DgTHhItBVa+k9RWboghONACYJ9/SB/yfUkGj\n5RDOAqLgefEYC2nzbcbU/WY3K9jXgKZk5d6TloL5g49yXsvEnVTjJndvzCtJQ0eP\nOrWDYhWNtZeLo+KKYqoqvQWB/YYF8Y6587ETUAuy7udAD/Do6HKbLUXVDNXTi4N7\n3lfR8LZpwVdE+GdPf8tWWLAZ5gadqTNaI8L+XzVu6Nvd+osPQ8e+9MTdifQ9v5kG\nndZ0RkLBAgMBAAECggEABbDCKNmqrxMUA05H14cpyFTxfjSkF8WNW4uKMQROIYor\nSswKLnHGB9Qg0djMJeUwFCCMNIRthksfP7MdzPBsr3RB0t11AXli50PDYBd2WB79\nm5Gwi+rmp7ylrFQ8MXs5lsDgoNLF3dBSr0axPf9i371ObfQFyS+mW+Jkf4FWMRUz\nUcrusbZDVig3sfTqilXsbo2qxD2PSGN+VdGOX5GXudgz/mv/NabrDDDCG+i3sNGZ\nhZIy07Lv1n07k48GXrp5gdNivru5xBuF57wC/im6OoxrQlPiwcwrJjpVbANSLm8u\n4SqpaC/2kbOl6aO0UVR9Jo1YLNbY8+1fk5YkYqiK0QKBgQDSSKuT26ykXGaXqRuZ\naOUL/ltIt5DNBVMuBAR75ZyxffSrMN+wD3TVGKmPtUHwe4qniroe4zM1B4Ew6TvQ\nMg7rzTI8XjzsRK4labInFn+gzSH1P6RmMMSs1xubxkFxHawq3YCEPkuCZQZVa+xO\n4i3m2wqZGdatQ+OLKb6JlBrteQKBgQC6ukqu4phPUNoyDcIoRJhl5zI1aAv36/U3\nwUnySazu1FoiieJJfNHN+EHF6BdFZRBvJ75nMnrta3McM4vdEys9nXZ0MA161GvQ\nBMHQ/TTM+AYRcMA9n8COTENjw/OHouxfkULWSPTv2gRmAQQkAkDhzqfgckQfk/es\nppTzvCRViQKBgQDBss7ZU/CjNboK2Wri1QynD5VmVjC7qbwFFw5KUicUF8HYLxzd\nQF+OKzmFdqFWs3X0/oSTDxWMM219cFn4XSQBcPJlSSk1Oc5wB/xipQbLSCmPjyAQ\nQbvoufxkcSq2125Pzdkj9332jrhW1yLFRvKhRANvI63rzC09cyZf9F0ZgQKBgHhL\nA0nfGJggUjDkxCwE5NjhNGtLeEpjbDpa/zRjWlER5G9TvL/y9YZnZJgGiNdf4FJ7\nnCIHV0IUcre8TWJCsxyikGkRe92hc0MzjVkBhj51mhMqO+53OClz4AYpen3q67Q1\ndIVvwruyDBtalDxOZ1YRN/1UH6boQCqttk++6PlhAoGAWJYLcFEgcitgUYhA3toV\nOmyhnSgWDpHm6kzMg04GRdgdd4ut7twKVt4rS/7Cf7s923gcK+cq6jeJBoxuG1bB\nbIN745d7h/5EoDVB72cWzlRv+9jvOGwFI4qL/Hejn9Xvj7xUR71cxjQASvGQGP0c\nHGq6HsjJW8mkHTdWtvMRhOM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "data-pipeline@scg-datascience.iam.gserviceaccount.com",
+  "client_id": "106413844949227106879",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/data-pipeline%40scg-datascience.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

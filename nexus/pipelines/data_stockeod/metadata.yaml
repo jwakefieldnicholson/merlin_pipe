@@ -1,0 +1,216 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - missing_values_for_marvelous_inventor
+  - unique_values_for_marvelous_inventor
+  - resilient_sword
+  - barrier_metrics
+  - company_info
+  - mktcap
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: marvelous inventor
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: marvelous_inventor
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - solitary_frog
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: resilient sword
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - marvelous_inventor
+  uuid: resilient_sword
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    barriers:
+    - 0.55
+    - 0.75
+    - 0.75
+    - 0.85
+    file_path: transformers/barrier_metrics.py
+    file_source:
+      path: transformers/barrier_metrics.py
+    timeframes_months:
+    - 3
+    - 6
+    - 9
+    - 12
+    - 15
+    - 18
+    - 24
+    trading_days_per_year: 252
+  downstream_blocks:
+  - solitary_frog
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: barrier_metrics
+  retry_config: {}
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - marvelous_inventor
+  uuid: barrier_metrics
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - revered_grace
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: solitary frog
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - resilient_sword
+  - barrier_metrics
+  - company_info
+  - mktcap
+  uuid: solitary_frog
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    file_path: data_loaders/company_info.py
+    file_source:
+      path: data_loaders/company_info.py
+  downstream_blocks:
+  - solitary_frog
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: company_info
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks:
+  - marvelous_inventor
+  uuid: company_info
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    dynamic: false
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: revered grace
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - solitary_frog
+  uuid: revered_grace
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - solitary_frog
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: mktcap
+  retry_config: null
+  status: updated
+  timeout: null
+  type: data_loader
+  upstream_blocks:
+  - marvelous_inventor
+  uuid: mktcap
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2025-05-14 17:20:18.207723+00:00'
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: data_stockEOD
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: data_stockeod
+variables:
+  bigquery_table_id: scg-datascience.scg_stocks.EOD
+variables_dir: /home/src/mage_data/nexus
+widgets:
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    chart_style: horizontal
+    chart_type: bar chart
+    group_by: []
+    x: columns_with_mising_values
+    y: percentage_of_missing_values
+    y_sort_order: descending
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: missing values for marvelous_inventor
+  retry_config: null
+  status: failed
+  timeout: null
+  type: chart
+  upstream_blocks:
+  - marvelous_inventor
+  uuid: missing_values_for_marvelous_inventor
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    chart_style: horizontal
+    chart_type: bar chart
+    x: columns
+    y: number_of_unique_values
+    y_sort_order: descending
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: unique values for marvelous_inventor
+  retry_config: null
+  status: executed
+  timeout: null
+  type: chart
+  upstream_blocks:
+  - marvelous_inventor
+  uuid: unique_values_for_marvelous_inventor
